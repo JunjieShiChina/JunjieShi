@@ -28,6 +28,12 @@
 			<artifactId>spring-cloud-starter-eureka-server</artifactId>
 			<version>1.4.5.RELEASE</version>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>1.10</version>
+		</dependency>
 
 	</dependencies>
 
