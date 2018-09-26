@@ -2,7 +2,9 @@ server:
   port: 8761
   
 eureka:
-
+  server:
+    enableSelfPreservation: false
+#    evictionIntervalTimerInMs: 4000 默认60s
   client:
     registerWithEureka: false
     fetchRegistry: false
