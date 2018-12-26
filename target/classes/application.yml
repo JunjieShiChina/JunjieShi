@@ -1,0 +1,25 @@
+server:
+  port: 8761
+spring:
+  profiles: peer1
+  application:
+    name: eureka-peer1
+eureka:
+  instance:
+    ip-address: 192.168.1.7
+    prefer-ip-address: true
+  server:
+    enableSelfPreservation: false
+#    evictionIntervalTimerInMs: 4000 默认60s
+  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+    service-url:
+      defaultZone: http://192.168.1.21:8761/eureka/   
+          
+security: #开启认证
+  basic:
+    enabled: true
+  user:
+    name: eureka
+    password: eureka
