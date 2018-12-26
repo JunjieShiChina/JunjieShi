@@ -1,12 +1,12 @@
 server:
   port: 8761
 spring:
-  profiles: peer1
+  profiles: peer2
   application:
     name: simple-eureka
 eureka:
   instance:
-    ip-address: 192.168.1.7
+    ip-address: 192.168.1.21
     prefer-ip-address: true
   server:
     enableSelfPreservation: false #关闭自我保护，默认60秒后剔除失效服务
@@ -15,7 +15,7 @@ eureka:
 #    registerWithEureka: false
 #    fetchRegistry: false
     service-url:
-      defaultZone: http://eureka:eureka@192.168.1.21:8761/eureka/
+      defaultZone: http://eureka:eureka@192.168.1.7:8761/eureka/
           
 security: #开启认证
   basic:
