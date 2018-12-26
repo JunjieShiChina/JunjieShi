@@ -9,7 +9,7 @@ eureka:
     ip-address: 192.168.1.7
     prefer-ip-address: true
   server:
-    enableSelfPreservation: true
+    enableSelfPreservation: false #关闭自我保护，默认60秒后剔除失效服务
 #    evictionIntervalTimerInMs: 4000 默认60s
   client:
 #    registerWithEureka: false
