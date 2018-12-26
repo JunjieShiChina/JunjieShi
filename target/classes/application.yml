@@ -3,7 +3,7 @@ server:
 spring:
   profiles: peer2
   application:
-    name: eureka-peer2
+    name: simple-eureka
 eureka:
   instance:
     ip-address: 192.168.1.21
