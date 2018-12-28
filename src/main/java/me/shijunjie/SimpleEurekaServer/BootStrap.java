@@ -1,7 +1,7 @@
 package me.shijunjie.SimpleEurekaServer;
 
-import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 @SpringBootApplication
@@ -9,6 +9,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 //@PropertySource("classpath:application.yml")
 public class BootStrap {
 	public static void main(String[] args) {
-		SpringApplication.run(BootStrap.class, args);
+		String profile = args[0];
+		new SpringApplicationBuilder(BootStrap.class).profiles(profile).run(args);
 	}
 }
