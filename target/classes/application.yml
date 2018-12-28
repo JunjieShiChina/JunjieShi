@@ -1,3 +1,4 @@
+---
 server:
   port: 8761
 spring:
@@ -22,9 +23,9 @@ security: #开启认证
   user:
     name: eureka
     password: eureka
-    
+...
+ 
 ---
-
 server:
   port: 8761
 spring:
@@ -49,3 +50,4 @@ security: #开启认证
   user:
     name: eureka
     password: eureka
+...
